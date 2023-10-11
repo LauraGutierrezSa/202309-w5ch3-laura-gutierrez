@@ -5,7 +5,7 @@ class Characters {
   isDead;
   series;
 
-  die(name) {}
+  die(name, deathStatus) {}
 }
 
 export default Characters;
