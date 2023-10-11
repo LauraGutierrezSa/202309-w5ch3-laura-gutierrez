@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "GOT classes",
   "main": "./app/index.js",
+  "type": "module",
   "scripts": {
     "start": "node app .",
     "start-dev": "node --watch app"
@@ -18,5 +19,6 @@
     "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
     "prettier": "^3.0.3"
-  }
+  },
+  "dependencies": {}
 }
