@@ -9,7 +9,7 @@ class Advicer extends Character {
   }
 
   communicate() {
-    return `${super.communicate()} I don't know why but I think I'm going to die soon... `;
+    return `${super.communicate()} I don't know why, but I think I'm going to die soon... `;
   }
 }
 
