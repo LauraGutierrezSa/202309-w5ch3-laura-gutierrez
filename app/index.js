@@ -11,3 +11,14 @@ const adviser = new Adviser("Tyrion Lannister", "Daenerys Targaryen");
 const squier = new Squier("Bronn", "Jaime Lannister");
 
 const charactersArray = [king, knight, warrior, adviser, squier];
+
+const getCharactersCommunications = (characters) => {
+  let messages = [];
+
+  charactersArray.forEach((character) => {
+    messages.push(character.communicate());
+  });
+  return messages;
+};
+
+console.log(getCharactersCommunications());
