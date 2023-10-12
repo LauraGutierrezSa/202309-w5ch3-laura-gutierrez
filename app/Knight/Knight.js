@@ -1,11 +1,13 @@
 import Character from "../Character/Character.js";
 
-class Kight extends Character {
+class Knight extends Character {
   weapon;
   skills;
 
-  constructor(characterName) {
-    super(characterName);
+  constructor(name, family, age, weapon, skills) {
+    super(name, family, age);
+    this.weapon = weapon;
+    this.skills = skills;
   }
 
   communicate() {
@@ -13,4 +15,4 @@ class Kight extends Character {
   }
 }
 
-export default Kight;
+export default Knight;

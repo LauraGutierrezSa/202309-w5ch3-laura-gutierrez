@@ -5,8 +5,10 @@ class Character {
   isAlive = true;
   series = "Game of Thrones";
 
-  constructor(characterName) {
+  constructor(characterName, characterFamily, characterAge) {
     this.name = characterName;
+    this.family = characterFamily;
+    this.age = characterAge;
   }
 
   die() {
