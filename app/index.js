@@ -5,6 +5,7 @@ import Squier from "./Squier/Squier.js";
 import Adviser from "./Adviser/Adviser.js";
 
 const king = new King(
+  5,
   "Joffrey Baratheon",
   "Baratheon and Lannister",
   13,
@@ -13,10 +14,12 @@ const king = new King(
 );
 const knight = new Knight(
   "Jamie Lannister",
-  "House of Lannister",
+  "Lannister",
   41,
   true,
   "Game of Thrones",
+  "sword",
+  10,
 );
 const warrior = new Knight(
   "Daenerys Targaryen",
@@ -27,7 +30,7 @@ const warrior = new Knight(
 );
 const adviser = new Adviser(
   "Tyrion Lannister",
-  "House of Lannister",
+  "Lannister",
   37,
   true,
   "Game of Thrones",
@@ -45,13 +48,13 @@ const squier = new Squier(
 
 const charactersArray = [king, knight, warrior, adviser, squier];
 
-const getCharactersCommunications = (characters) => {
-  let messages = [];
+const charactersCommunicate = (characters) =>
+  characters.map((charactersArray) => charactersArray.communicate());
 
-  charactersArray.forEach((character) => {
-    messages.push(character.communicate());
-  });
-  return messages;
-};
+charactersCommunicate(charactersArray).forEach((communicate) =>
+  console.log(communicate),
+);
 
-console.log(getCharactersCommunications());
+king.die();
+
+adviser.die();

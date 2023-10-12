@@ -1,6 +1,6 @@
 import Character from "../Character/Character.js";
 
-class Advicer extends Character {
+class Adviser extends Character {
   advicedCharacter;
 
   constructor(characterName, advicedPersonsName) {
@@ -13,4 +13,4 @@ class Advicer extends Character {
   }
 }
 
-export default Advicer;
+export default Adviser;
