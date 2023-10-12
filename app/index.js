@@ -44,6 +44,7 @@ const squier = new Squier(
   true,
   "Game of Thrones",
   "Jaime Lannister",
+  3,
 );
 
 const charactersArray = [king, knight, warrior, adviser, squier];

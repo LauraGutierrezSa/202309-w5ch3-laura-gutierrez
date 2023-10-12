@@ -4,8 +4,10 @@ class Squier extends Character {
   servedCharacter = "knight";
   assKissingLevel;
 
-  constructor(characterName) {
+  constructor(characterName, assKissingLevel, servedCharacter) {
     super(characterName);
+    this.assKissingLevel = assKissingLevel;
+    this.servedCharacter = servedCharacter;
   }
 
   communicate() {
